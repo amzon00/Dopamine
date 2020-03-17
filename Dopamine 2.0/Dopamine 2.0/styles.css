@@ -1,0 +1,104 @@
+body {
+    margin: 100px;
+    padding: 100px;
+    text-align: center;
+    background-color: #FFFAFA;
+    overflow-y: scroll;
+}
+
+.main-logo {
+    max-width: 150px;
+    position: relative;
+    margin: auto;
+    margin-bottom: -15px;
+}
+
+.menu {
+    width: 700px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.secondary-logo {
+    max-width: 120px;
+    position: absolute;
+    left: 40%;
+    background-color: black;
+    margin: 6px;
+    display: inline-block;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.notification-counter-large {
+    position: absolute;
+    left: 94%;
+    display: inline-block;
+    color: red;
+    font-size: 50px;
+    margin: -3px;
+}
+
+.frame {
+    position: relative;
+    width: 700px;
+    background-color: rgba(252, 245, 235, 0.76);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: -20px;
+}
+
+.option-panel {
+    position: relative;
+    width: 680px;
+    height: 70px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    top: 20px;
+}
+
+.notification-icon {
+    position: relative;
+    display: inline-block;
+    right: 390px;
+    bottom: 35px;
+    max-width: 7%;
+}
+
+.timers {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    left: 270px;
+    bottom: 65px;
+}
+
+a {
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+    font-size: 20px;
+}
+
+p {
+    position: relative;
+    bottom: 10px;
+}
+
+.small-counter-icon {
+    position: relative;
+    width: 19px;
+    height: 19x;
+    background: black;
+    border-radius: 50%;
+    color: #fff;
+    margin: auto;
+    transform: translate(350%, -50%);
+}
