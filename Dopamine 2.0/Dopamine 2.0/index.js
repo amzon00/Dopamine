@@ -156,7 +156,7 @@ function removeNotification(id) {
 
 function updateCheck(data) {
     setInterval(() => {
-        fetch('/db2.json')
+        fetch('/db.json')
             .then(res => res.json())
             .then(updatedData => {
                 if (updatedData.length > data.length) { // checks if new data is added and if so it renders it.
