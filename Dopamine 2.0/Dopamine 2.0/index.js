@@ -146,7 +146,8 @@ function createTimer(timers) {
 function removeNotification(id) {
     let parent = id.parentElement;
     let grandParent = parent.parentElement;
-    grandParent.remove();
+    grandParent.style.opacity = '0';
+    setTimeout(function(){grandParent.remove(grandParent)}, 1000);
     if (parent.lastElementChild.innerHTML !== 'bonus') {
         notificationCounter.textContent--;
         smallNotificationCounter.textContent--;
@@ -155,7 +156,7 @@ function removeNotification(id) {
 
 function updateCheck(data) {
     setInterval(() => {
-        fetch('/db.json')
+        fetch('/db2.json')
             .then(res => res.json())
             .then(updatedData => {
                 if (updatedData.length > data.length) { // checks if new data is added and if so it renders it.
@@ -208,4 +209,4 @@ function locatingDomElements(existingIds, id) {
             removeNotification(id);
         }
     };
-}
+};
